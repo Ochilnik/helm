@@ -7,15 +7,13 @@ replicaCount: 1
 image:
   repository: ochilnik
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.2.0-a848c49"
+  tag: "1.16.0"
+  arch: amd64
 
 secret:
   name: "kbot"
   env: "TELE_TOKEN"
   key: "token"  
-#  tokenKey: "token"
-#  tokenName: "TELE_TOKEN"
   
-
 securityContext:
   privileged: true
